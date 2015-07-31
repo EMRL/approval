@@ -1,0 +1,6 @@
+name: approval
+desc: Client Approval
+author: Corey Worrell
+version: 1.0
+info_url: http://emrl.com
+config_url: /plugins/approval/pages/setup.php

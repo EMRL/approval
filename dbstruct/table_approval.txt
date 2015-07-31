@@ -1,0 +1,7 @@
+id,int(11) unsigned,NO,PRI,NULL,auto_increment
+ref,int(11),NO,MUL,NULL,
+posted,datetime,NO,,NULL,
+comment,text,NO,,NULL,
+name,varchar(60),NO,,NULL,
+signature,varchar(10),NO,,NULL,
+status,enum('approved','minor','major'),NO,,'approved',
