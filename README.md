@@ -1,10 +1,20 @@
 Approval
 =============
-A client approval plugin for ResourceSpace.
+A client approval plugin for [ResourceSpace](http://resourcespace.org/).
 
-For past few years, we have been using variations of this plugin in the daily operation of an [advertising agency](http://emrl.com/) in northern California. It has proven to be super useful and very reliable, and we're finally getting around to publishing it so other users of [Resourcespace](http://resourcespace.org/) can benefit.
+![Image](http://emrl.co/assets/img/approval.jpg)
 
-It is still missing some features, and has not really been prepared for public consumption but we're working on that now. If you end up finding that this is useful to you, let us know!
+For past few years, we have been using variations of this plugin in the daily operation of an [advertising agency](http://emrl.com/) in northern California. It has proven to be super useful and very reliable, and we're finally getting around to publishing it so other users of [ResourceSpace](http://resourcespace.org/) can benefit.
+
+It is still missing quite a bunch of features we plan on adding, and has not really been prepared for public consumption so it may be a pain in the ass to install (sorry!) 
+
+If you end up finding that this is useful to you, let us know!
+
+How It Works
+--------
+When uploading or editing a resource, if this plugin is enabled you'll see an new option to add an approval form. When this option is enabled, a simple approval form will be displayed in the resource description, allowing for a client to choose  "Approved", " Not Approved - Minor Changes", or "Not Approved - Major Changes". In addition, the client can enter notes on the changes needed. Comments are stored, creating a history of the approval process over time. The client then enters their name and initials, and submits the form.
+
+The results of the client's submission form are emailed to the users that are defined in the plugin's options.
 
 Installation
 --------
