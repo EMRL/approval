@@ -29,7 +29,7 @@ The plugin will be document in more detail soon, but for now here are the basics
    All other fields are optional.
 4. Configure plugin (Team Center > Manage Plugins > approval > Options)
 
-Author
+Contact
 --------
 * <http://emrl.com/>
 * <https://www.facebook.com/advertisingisnotacrime> 
