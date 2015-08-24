@@ -9,21 +9,21 @@
 
 		<div id="approval-container">
 			<div id="approval-form">
-				<div class="Title">Client Approval</div>
+				<div class="Title"><?php echo $lang["title"]?></div>
 				
 				<?php if ($resource['approval_status'] === 'approved'): ?>
 					<div id="approved">
-						<h3><span>Approved</span></h3>
-						<p>Approved by <?php echo $history[0]['name'] ?> on <?php echo date('M j, Y', strtotime($history[0]['posted'])) ?></p>
-						<p><a id="approval-form-toggle" href="#"><span class="minor">Revert to Not Approved</span></a></p>
+						<h3><span><?php echo $lang["approved"]?></span></h3>
+						<p><?php echo $lang["approved-by"]?> <?php echo $history[0]['name'] ?> on <?php echo date('M j, Y', strtotime($history[0]['posted'])) ?></p>
+						<p><a id="approval-form-toggle" href="#"><span class="minor"><?php echo $lang["revert"]?></span></a></p>
 					</div>
 				<?php elseif ($resource['approval_status'] === 'minor'): ?>
 					<div id="minor-edits">
-						<h3><span>Not Approved</span></h3>
+						<h3><span><?php echo $lang["not-approved"]?></span></h3>
 					</div>
 				<?php elseif ($resource['approval_status'] === 'major'): ?>
 					<div id="major-edits">
-						<h3><span>Not Approved</span></h3>
+						<h3><span><?php echo $lang["not-approved"]?></span></h3>
 					</div>
 				<?php endif ?>
 				
@@ -31,7 +31,7 @@
 					<input type="hidden" name="referrer" value="<?php echo base64_encode($_SERVER['REQUEST_URI']) ?>" />
 					<input type="hidden" name="ref" value="<?php echo $ref ?>" />
 					
-					<p>Please carefully check your proof for spelling, puncuation, grammar, names, dates, phone numbers, &amp; email/website addresses.</p>
+					<p><?php echo $lang["overview"]?></p>
 					
 					<div>
 						<table id="status-options">
@@ -41,9 +41,9 @@
 								</td>
 								<td class="label">
 									<label for="status-approved">
-										<span class="approved">Approved</span>
-										<span class="desc">No Changes</span>
-										<span class="desc-two">Proceed with job completion.</span>
+										<span class="approved"><?php echo $lang["approved"]?></span>
+										<span class="desc"><?php echo $lang["change-none"]?></span>
+										<span class="desc-two"><?php echo $lang["change-none-desc"]?></span>
 									</label>
 								</td>
 								
@@ -52,9 +52,9 @@
 								</td>
 								<td class="label">
 									<label for="status-minor">
-										<span class="minor">Not Approved</span>
-										<span class="desc">Minor Changes</span>
-										<span class="desc-two">List your changes below; you will be contacted when your updated proof is ready.</span>
+										<span class="minor"><?php echo $lang["not-approved"]?></span>
+										<span class="desc"><?php echo $lang["change-minor"]?></span>
+										<span class="desc-two"><?php echo $lang["change-minor-desc"]?></span>
 									</label>
 								</td>
 								
@@ -63,9 +63,9 @@
 								</td>
 								<td class="label">
 									<label for="status-major">
-										<span class="major">Not Approved</span>
-										<span class="desc">Major Changes</span>
-										<span class="desc-two">We will call for further discussion.</span>
+										<span class="major"><?php echo $lang["not-approved"]?></span>
+										<span class="desc"><?php echo $lang["change-major"]?></span>
+										<span class="desc-two"><?php echo $lang["change-major-desc"]?></span>
 									</label>
 								</td>
 							</tr>
@@ -74,48 +74,47 @@
 					</div>
 					
 					<p>
-						<label for="name">Reviewed by:</label>
-						<input type="text" name="name" id="name" placeholder="Your Name" class="required" required />
+						<label for="name"><?php echo $lang["reviewed-by"]?>:</label>
+						<input type="text" name="name" id="name" placeholder="<?php echo $lang["your-name"]?>" class="required" required />
 					</p>
 					
 					<p id="approval-comments">
-						<label for="comment">Comments &amp; Corrections (if applicable):</label>
+						<label for="comment"><?php echo $lang["comments"]?>:</label>
 						<textarea name="comment" id="comment" cols="80" rows="7"></textarea>
 					</p>
 					
 					<p>
 						<label for="signature">
-							Please enter your initials below and click the Submit button.<br />
-							<small><i>By initialing this form you are acknowledging receipt of this document, and verifying that<br /> you have carefully reviewed the artwork contained herein.</i></small>
+							<?php echo $lang["initials-desc"]?><br />
+							<small><i><?php echo $lang["fine-print"]?></i></small>
 						</label> 
 					</p>
 
 					<p>
-						<input type="text" maxlength="3" name="signature" id="signature" size="2" class="required" required /> &nbsp; <span class="review-date">Reviewed on <?php echo date('F jS, Y \a\t g:i A') ?></span>
+						<input type="text" maxlength="3" name="signature" id="signature" size="2" class="required" required /> &nbsp; <span class="review-date"><?php echo $lang["reviewed-on"]?> <?php echo date('F jS, Y \a\t g:i A') ?></span>
 					</p>
 					
 					<br />
-						<input class="approval-button" type="submit" value="Submit" />
-
+						<input class="approval-button" type="submit" value="<?php echo $lang["submit"]?>" />
 
 				</form>
 			</div>
 
 			<div id="approval-history">
-				<div class="Title">Approval History</div>
+
 
 				<?php if (empty($history)): ?>
-					No history yet.
+					<!--// Hush up. //-->
 				<?php else: ?>
-					
+									<div class="Title"><?php echo $lang["history"]?></div>
 					<table class="history">
 						<?php foreach ($history as $row): ?>
 							<tr>
 								<th><?php echo date('M j, Y', strtotime($row['posted'])) ?></th>
 								<td>
-									<strong>Status:</strong> <?php echo approval_status($row['status']) ?><br />
-									<strong>Name:</strong> <?php echo $row['name'] ?><br />
-									<strong>Initials:</strong> <?php echo $row['signature'] ?><br />
+									<strong><?php echo $lang["status"]?>:</strong> <?php echo approval_status($row['status']) ?><br />
+									<strong><?php echo $lang["name"]?>:</strong> <?php echo $row['name'] ?><br />
+									<strong><?php echo $lang["initials"]?>:</strong> <?php echo $row['signature'] ?><br />
 									<?php if ( ! empty($row['comment'])): ?>
 										<br />
 										<?php echo nl2br($row['comment']) ?>
@@ -126,7 +125,7 @@
 					</table>
 					
 					<?php if (count($history) > 3): ?>
-						<a href="#" id="approval-toggle-history">Show All History</a>
+						<a href="#" id="approval-toggle-history"><?php echo $lang["show-all-history"]?></a>
 					<?php endif ?>
 					
 				<?php endif ?>

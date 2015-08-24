@@ -2,14 +2,14 @@
 
 function HookApprovalViewHeadblock()
 {
-	global $css_reload_key;
+	global $lang, $css_reload_key;
 	//echo '<link type="text/css" rel="stylesheet" media="all" href="/plugins/approval/style.css?css_reload_key='.$css_reload_key.'" />';
 	//echo '<script type="text/javascript" src="/plugins/approval/validation.js?css_reload_key='.$css_reload_key.'"></script>';
 }
 
 function HookApprovalViewRenderbeforeresourcedetails()
 {
-	global $ref, $resource, $fields;
+	global $lang, $ref, $resource, $fields;
 	
 	$approval_form_id = sql_value("SELECT ref AS value FROM resource_type_field WHERE name = 'approval_form'", FALSE);
 	
@@ -34,6 +34,8 @@ function HookApprovalViewRenderbeforeresourcedetails()
 
 function approval_status($status)
 {
+	global $lang;
+	
 	switch($status)
 	{
 		case 'approved':
