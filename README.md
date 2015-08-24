@@ -4,7 +4,7 @@ A client approval plugin for [ResourceSpace](http://resourcespace.org/).
 
 ![Image](http://emrl.co/assets/img/approval.jpg)
 
-For past few years, we have been using variations of this plugin in the daily operation of an [advertising agency](http://emrl.com/) in northern California. It has proven to be super useful and very reliable, and we're finally getting around to publishing it so other users of [ResourceSpace](http://resourcespace.org/) can benefit.
+For the past few years, we have been using variations of this plugin in the daily operation of an [advertising agency](http://emrl.com/) in northern California. It has proven to be super useful and very reliable, and we're finally getting around to publishing it so other users of [ResourceSpace](http://resourcespace.org/) can benefit.
 
 It is still missing quite a bunch of features we plan on adding, and has not really been prepared for public consumption so it may be a pain in the ass to install (sorry!) 
 
