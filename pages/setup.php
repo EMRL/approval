@@ -35,7 +35,7 @@ if (empty($settings))
 
 $settings = $settings + array(
 	'email_to'      => NULL,
-	'email_subject' => 'Asset Manager Client Approval Submission',
+	'email_subject' => 'Client Approval Submission',
 	'email_message' => '',
 );
 
@@ -50,21 +50,24 @@ $settings = $settings + array(
 	<div class="VerticalNav">
 		<form method="post" action="">
 			<div class="Question">
-				<label for="autocomplete"><?php echo $lang['emailtousers']?></label>
+				<label for="autocomplete">
+						<?php echo $lang['email-users']?>:<br />
+						<?php echo $lang["email-users-desc"]?>
+				</label>
 				<?php $userstring = $settings['email_to']; include '../../../include/user_select.php' ?>
 				<div class="clearerleft"></div>
 			</div>
 			
 			<div class="Question">
-				<label for="email_subject">Email Subject:</label> 
+				<label for="email_subject"><?php echo $lang["email-subject"]?>:</label> 
 				<input type="text" name="email_subject" id="email_subject" size="60" class="stdwidth" value="<?php echo htmlspecialchars($settings['email_subject']) ?>" />
 				<div class="clearerleft"></div>
 			</div>
 			
 			<div class="Question">
 				<label for="email_message">
-					Default Email Message:<br />
-					Used as the default email message when sending an asset to clients.
+					<?php echo $lang["email-message"]?>:<br />
+					<?php echo $lang["email-message-desc"]?>
 				</label>
 				<textarea name="email_message" id="email_message" cols="56" rows="4" class="stdwidth"><?php echo htmlspecialchars($settings['email_message']) ?></textarea>
 				<div class="clearerleft"></div>
