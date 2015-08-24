@@ -85,7 +85,7 @@
 					
 					<p>
 						<label for="signature">
-							<?php echo $lang["initials"]?><br />
+							<?php echo $lang["initials-desc"]?><br />
 							<small><i><?php echo $lang["fine-print"]?></i></small>
 						</label> 
 					</p>
