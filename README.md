@@ -18,11 +18,13 @@ The results of the client's submission form are emailed to the users that are de
 
 Installation
 --------
-The plugin will be document in more detail soon, but for now here are the basics:
+**PLEASE NOTE APPROVAL IS NOT CURRENTLY WORKING WITH RESOURCESPACE v7+**
+
+The plugin will be documented in more detail soon, but for now here are the basics:
 
 1. Copy files to Plugins folder
-2. Activate plugin (Team Center > Manage Plugins > approval > Activate)
-3. Create approval form resource field (Team Center > System Setup > Resource Types / Fields > [Type] > New Field)
+2. Activate plugin by going to Team Center > System > Manage Plugins > Collaboration > approval > Activate *(For ResourceSpace v6 or lower, Team Center > Manage Plugins > approval > Activate)*
+3. Create approval form resource field by going to Team Center > System > Manage metadata fields > Create *(For ResourceSpace v6 or lower, Team Center > System Setup > Resource Types / Fields > [Type] > New Field)*
    * Set the 'Shorthand name' to exactly **approval_form**
    * For 'Field Type' you can choose 'Check box list', and for the 'Options' just enter one value: 'Yes'.
    * The plugin will only show the Approval Form if the resource has the value 'Yes' for the 'approval_form' resource type field.
