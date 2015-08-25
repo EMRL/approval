@@ -105,13 +105,15 @@
 				<?php if (empty($history)): ?>
 					<!--// Hush up. //-->
 				<?php else: ?>
-									<div class="Title"><?php echo $lang["history"]?></div>
+
+					<div class="Title"><?php echo $lang["history"]?></div>
 					<table class="history">
 						<?php foreach ($history as $row): ?>
 							<tr>
 								<th>
 									<?php echo date('M j, Y', strtotime($row['posted'])) ?><br />
 									<span class="time">
+					
 										<?php echo date('g:i a', strtotime($row['posted'])) ?>
 									</span>
 								</th>
