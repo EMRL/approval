@@ -1,5 +1,5 @@
 <?php
-# American English
+# British English
 # Language File for Approval
 # https://github.com/EMRL/approval
 # -------
@@ -20,7 +20,7 @@ $lang['change-none-desc']='Proceed with job completion.';
 $lang['change-minor']='Minor Changes';
 $lang['change-minor-desc']='List your changes below; you will be contacted when your updated proof is ready.';
 $lang['change-major']='Major Changes';
-$lang['change-major-desc']='We will call for further discussion.';
+$lang['change-major-desc']='We will ring you for further discussion.';
 
 # History
 $lang['history']='Approval History';
@@ -46,4 +46,3 @@ $lang['email-subject']='Email Subject';
 $lang['email-message']='Default Email Message';
 $lang['email-message-desc']='Used as the default email message when sending an asset to clients.';
 ?>
-
