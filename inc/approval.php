@@ -102,7 +102,6 @@
 
 			<div id="approval-history">
 
-
 				<?php if (empty($history)): ?>
 					<!--// Hush up. //-->
 				<?php else: ?>
@@ -110,7 +109,12 @@
 					<table class="history">
 						<?php foreach ($history as $row): ?>
 							<tr>
-								<th><?php echo date('M j, Y', strtotime($row['posted'])) ?></th>
+								<th>
+									<?php echo date('M j, Y', strtotime($row['posted'])) ?><br />
+									<span class="time">
+										<?php echo date('g:i a', strtotime($row['posted'])) ?>
+									</span>
+								</th>
 								<td>
 									<strong><?php echo $lang["status"]?>:</strong> <?php echo approval_status($row['status']) ?><br />
 									<strong><?php echo $lang["name"]?>:</strong> <?php echo $row['name'] ?><br />
