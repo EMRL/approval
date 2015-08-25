@@ -15,7 +15,7 @@
 					<div id="approved">
 						<h3><span><?php echo $lang["approved"]?></span></h3>
 						<p><?php echo $lang["approved-by"]?> <?php echo $history[0]['name'] ?> on <?php echo date('M j, Y', strtotime($history[0]['posted'])) ?></p>
-						<p><a id="approval-form-toggle" href="#"><span class="minor"><?php echo $lang["revert"]?></span></a></p>
+						<p><a id="approval-form-toggle" href="#"><span class="minor revert"><?php echo $lang["revert"]?></span></a></p><br />
 					</div>
 				<?php elseif ($resource['approval_status'] === 'minor'): ?>
 					<div id="minor-edits">
