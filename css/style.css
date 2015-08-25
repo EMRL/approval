@@ -8,25 +8,13 @@ div.RecordPanel {overflow:hidden;}
 
 #approved h3,
 #minor-edits h3,
-#major-edits h3 {
-	margin:0;
-	padding:20px 0;
-	color:#4F8A10;
-	font-weight:bold;
-	font-size:45px;
-	line-height:1;
-
-	opacity:0.6;
-}
+#major-edits h3 {margin:0; padding:20px 0; color:#4F8A10; font-weight:bold; font-size:45px; line-height:1; opacity:0.6;}
 #minor-edits h3 {color:#9F6000;}
 #major-edits h3 {color:#D8000C;}
 
 #approved h3 span,
 #minor-edits h3 span,
-#major-edits h3 span {
-	letter-spacing: -1.5px;
-
-}
+#major-edits h3 span {letter-spacing: -1.5px;}
 #minor-edits h3 span {border-color:#9F6000;}
 #major-edits h3 span {border-color:#D8000C;}
 
@@ -46,8 +34,9 @@ div.RecordPanel {overflow:hidden;}
 #approval-history {float:right; width:47%;}
 #approval-history table.history {border-collapse:collapse; width:100%;}
 #approval-history table.history th, #approval-history table.history td {vertical-align:top; padding:20px 0; /*border-bottom:1px solid #BFBFBF*/;}
-#approval-history table.history th {width:1%; padding-right:30px; white-space:nowrap;}
+#approval-history table.history th {width:1%; padding-right:30px; white-space:nowrap; text-align: right;}
 #approval-toggle-history {display:block; margin-top:5px; text-align:center;}
+.time {font-weight: normal;}
 
 input.required, textarea.required {}
 input.validation-failed, textarea.validation-failed {border:2px solid #C00;}
@@ -56,6 +45,7 @@ input.validation-passed, textarea.validation-passed {}
 
 .approval-button {background-color: #47ACDF; background-color: rgba(71,172,223,1); color:#FFFFFF;}
 .review-date {color:#999;}
+
 /* Search */
 .ResourcePanelShell,
 .ResourcePanelShellSmall,
