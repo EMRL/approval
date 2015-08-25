@@ -23,7 +23,7 @@ div.RecordPanel {overflow:hidden;}
 #status-options {margin-bottom:12px; margin-top: 12px; border-collapse:collapse;}
 #status-options td {vertical-align:top;}
 #status-options td.radio {width:1%;}
-#status-options td.label {padding-right:20px; line-height:1.75; width: 30%;}
+#status-options td.label {padding-right:20px; line-height:1.5; width: 30%;}
 #status-options td.label span {display:block;}
 #approval-container span.approved {color:#4F8A10; font-weight: bold;}
 #approval-container span.minor {color:#9F6000; font-weight: bold;}
