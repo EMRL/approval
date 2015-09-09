@@ -1,0 +1,26 @@
+<table>\r\n
+	<tr>\r\n    
+		<td valign="top">
+			<a href="[url]">[embed_thumbnail]</a>
+		</td>\r\n
+		<td width="20">
+			&nbsp;
+		</td>\r\n
+		<td valign="top">
+			[fromusername] [lang_hasemailedyouaresource]<br />\r\n
+			<br />\r\n
+			[message]
+		</td>\r\n
+	</tr>\r\n
+</table>\r\n\r\n\r\n
+<br />\r\n
+<br />\r\n
+[lang_clicktoviewresource]<br />\r\n
+<a href="[url]">[resourcename]<br />\r\n
+[url]</a><br />\r\n
+<br />\r\n\r\n\r\n\r\n
+<p style="font-size: 10px; color: #222; text-transform: uppercase; text-align: justify;">
+	<font size="1">_____<br />\r\n
+		This message contains confidential information and is intended only for the individual named. If you are not the named addressee you should not disseminate, distribute or copy this e-mail. Please notify EMRL immediately if you have received this e-mail by mistake and delete this e-mail from your system. If you are not the intended recipient you are notified that disclosing, copying, distributing or taking any action in reliance on the contents of this information is strictly prohibited.
+	</font>
+</p>\r\n
