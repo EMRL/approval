@@ -10,7 +10,7 @@ $lang['approved']='Approved';
 $lang['not-approved']='Not Approved';
 $lang['not-approved-minor']='Not Approved - Minor Changes';
 $lang['not-approved-major']='Not Approved - Major Changes';
-$lang['revert']='Revert to Not Approved';
+$lang['revert']='Change Approval Status';
 
 # Main approval panel
 $lang['title']='Client Approval';
