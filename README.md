@@ -1,5 +1,7 @@
 Approval
 =============
+[![Code Climate](https://codeclimate.com/github/EMRL/approval/badges/gpa.svg)](https://codeclimate.com/github/EMRL/approval)
+
 A client approval plugin for [ResourceSpace](http://resourcespace.org/).
 
 ![Image](http://emrl.co/assets/img/approval.jpg)
